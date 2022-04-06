@@ -1,4 +1,4 @@
-package University;
+
 
 /*
 Program: UFaculty.java          Last Date of this Revision: March 29, 2022
@@ -9,6 +9,8 @@ Course: Computer Science 30
  
 */
 
+package University;
+
 //Inherits UEmployee class
 public class UFaculty extends UEmployee 
 {
@@ -16,6 +18,7 @@ public class UFaculty extends UEmployee
 	//Created dept varable for Faculty
 	String dept;
 	
+	//UFaculty constructor method
 	public UFaculty(String f, String l, String d, double sal)
 	{
 		//Inherits first name and last name from UEmployee
@@ -26,24 +29,20 @@ public class UFaculty extends UEmployee
 		
 	}
 	
+	//When toDept is called upon, return department
 	String toDept()
 	{
 		return(dept);
 	}
 
-
+	//Returns department
 	public String toString()
 	{
-		return(super.toString()+ "\n Current Department: " + toDept());
+		return(super.toString()+ "\nCurrent Department: " + toDept());
 	}
 
-
-	double pay(double period) {
-		
-		return 0;
-	}
-	
 }
+	
 	
 	
 	
