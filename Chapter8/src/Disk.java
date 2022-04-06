@@ -1,13 +1,13 @@
-
+/*
+Program: Disk.java          Last Date of this Revision: March 27, 2022
+Purpose: To be extended by Puck class
+Author: Surkhab Mundi
+School: CHHS
+Course: Computer Science 30
+ 
+*/
 public class Disk 
 {
-	public String equals() 
-	{
-		return null; //returns nothing so that Puck1 class can override it
-	}
 	
-	public String toString() 
-	{
-		return null; //returns nothing so that Puck1 class can override it
-	}
+	
 }
