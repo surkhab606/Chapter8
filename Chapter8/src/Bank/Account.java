@@ -10,15 +10,54 @@ Course: Computer Science 30
 
 package Bank;
 
+import java.text.NumberFormat;
+
 public class Account 
 {
 	private double accountBalance;
-	private Customer cus;
+	private Customer cust;
 	
 	public Account(double bal, String fn, String ln, String str, String city, String prov, String zip)
 	{
 		accountBalance = bal;
-		cus = new Customer(fn, ln, str, city, prov, zip);
+		cust = new Customer(fn, ln, str, city, prov, zip);
+	}
+	
+	public double getAccountBalance() 
+	{
+		return(accountBalance);
 	}
 
-}
+	public void deposit(double amt)
+	{
+		accountBalance += amt;
+		
+	}
+	
+	public void withdrawl(double amt)
+	{
+		if (amt <= accountBalance) 
+		{
+			accountBalance -= amt;
+		} else 
+		{
+			System.out.println("Not enough money in your account.");
+		}
+	}
+		
+	public String toString() 
+	{
+		String accountString;
+		NumberFormat money = NumberFormat.getCurrencyInstance();
+		
+		accountString = cust.toString();
+		accountString += "Current balance of your account is: " + money.format(accountBalance);
+		return(accountString);
+	}
+	
+
+	
+	
+	
+	}
+
