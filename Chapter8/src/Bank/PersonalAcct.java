@@ -12,8 +12,8 @@ package Bank;
 
 public class PersonalAcct extends Account
 {
-	public PersonalAcct(double bal, String fn, String ln, String str, String city, String prov, String zip) 
+	public PersonalAcct(double bal, String fn, String ln, String str, String city, String prov, String z) 
 	{
-		super(bal, fn, ln, str, city, prov, zp);
+		super(bal, fn, ln, str, city, prov, z);
 	}
 }

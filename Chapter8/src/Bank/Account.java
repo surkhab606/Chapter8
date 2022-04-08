@@ -17,10 +17,10 @@ public class Account
 	private double accountBalance;
 	private Customer cust;
 	
-	public Account(double bal, String fn, String ln, String str, String city, String prov, String zip)
+	public Account(double bal, String fn, String ln, String str, String city, String prov, String z)
 	{
 		accountBalance = bal;
-		cust = new Customer(fn, ln, str, city, prov, zip);
+		cust = new Customer(fn, ln, str, city, prov, z);
 	}
 	
 	public double getAccountBalance() 
