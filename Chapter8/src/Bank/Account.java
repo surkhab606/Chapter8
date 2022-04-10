@@ -8,43 +8,33 @@ Course: Computer Science 30
  
 */
 
+//Put this class into the Bank package
 package Bank;
 
 import java.text.NumberFormat;
 
 public class Account 
 {
+	//account balance variable 
 	private double accountBalance;
 	private Customer cust;
 	
+	
+	//Constructor method
 	public Account(double bal, String fn, String ln, String str, String city, String prov, String z)
 	{
+		//Simplifies accountBalance to bal
 		accountBalance = bal;
 		cust = new Customer(fn, ln, str, city, prov, z);
 	}
 	
+	//Returns account balance
 	public double getAccountBalance() 
 	{
 		return(accountBalance);
 	}
-
-	public void deposit(double amt)
-	{
-		accountBalance += amt;
-		
-	}
 	
-	public void withdrawl(double amt)
-	{
-		if (amt <= accountBalance) 
-		{
-			accountBalance -= amt;
-		} else 
-		{
-			System.out.println("Not enough money in your account.");
-		}
-	}
-		
+	//Returns a string that displays current account balance
 	public String toString() 
 	{
 		String accountString;

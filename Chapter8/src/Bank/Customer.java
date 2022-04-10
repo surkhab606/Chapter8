@@ -7,8 +7,11 @@ School: CHHS
 Course: Computer Science 30
  
 */
+
+//Put this class into the Bank package
 package Bank;
 
+//Constructor method
 public class Customer 
 {
 	private String firstName, lastName, street, city, province, zip;
@@ -24,6 +27,7 @@ public class Customer
 		
 	}
 	
+	//Returns a string that represents the Customer object
 	public String toString()
 	{
 		String custString;

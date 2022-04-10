@@ -8,10 +8,14 @@ Course: Computer Science 30
  
 */
 
+//Put this class into the Bank package
 package Bank;
 
+//Personal account inherits Account class
 public class PersonalAcct extends Account
 {
+	
+	//Constructor method
 	public PersonalAcct(double bal, String fn, String ln, String str, String city, String prov, String z) 
 	{
 		super(bal, fn, ln, str, city, prov, z);

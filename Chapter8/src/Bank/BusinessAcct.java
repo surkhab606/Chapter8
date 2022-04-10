@@ -8,10 +8,13 @@ Course: Computer Science 30
  
 */
 
+//Put this class into the Bank package
 package Bank;
 
+//BusinessAcct inherits Account class
 public class BusinessAcct extends Account
 {
+	//Constructor method
 	public BusinessAcct(double bal, String fn, String ln, String str, String zip, String city, String prov)
 	{
 		super(bal, fn, ln, str, zip, city, prov);
