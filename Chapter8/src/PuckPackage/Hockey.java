@@ -1,12 +1,16 @@
+
 /*
-Program: Hockey.java          Last Date of this Revision: March 28, 2022
+Program: Hockey.java          Last Date of this Revision: March 28, 2022\
 Purpose: Test the Puck1 class
 Author: Surkhab Mundi 
 School: CHHS
 Course: Computer Science 30
  
 */
+package PuckPackage;
+
 import java.util.Scanner;
+
 
 //Hockey class inherits Puck1 class
 public class Hockey extends Puck1

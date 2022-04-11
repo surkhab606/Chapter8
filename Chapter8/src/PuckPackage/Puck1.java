@@ -1,3 +1,4 @@
+
 /*
 Program: Puck1.java          Last Date of this Revision: March 27, 2022
 Purpose: To inherit methods from the Disk class and return the classification of a puck's size as entered by the user.
@@ -6,6 +7,7 @@ School: CHHS
 Course: Computer Science 30
  
 */
+package PuckPackage;
 
 //Inherit disk class, implments Comparable so that spots can be compared
 public class Puck1 extends Disk implements Comparable<Puck1>

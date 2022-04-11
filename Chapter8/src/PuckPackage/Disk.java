@@ -6,6 +6,8 @@ School: CHHS
 Course: Computer Science 30
  
 */
+package PuckPackage;
+
 public class Disk 
 {
 	
